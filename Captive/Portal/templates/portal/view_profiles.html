@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Profiles</title>
+</head>
+<body>
+    <h1>View User Profiles</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Role</th>
+                <th>Authentication Token</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for profile in profiles %}
+            <tr>
+                <td>{{ profile.name }}</td>
+                <td>{{ profile.department }}</td>
+                <td>{{ profile.role }}</td>
+                <td>{{ profile.auth_token }}</td>
+                <td>{{ profile.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
