@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vp=p&-0y&164qvc&^4l%*mdhaks5lwk4_)6s0e$=(4d*(n#!(r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','bidur.pythonanywhere.com']
 
 # Enable HTTPS
 SECURE_SSL_REDIRECT = True
